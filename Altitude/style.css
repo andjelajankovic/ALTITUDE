@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap");
+/*$Fashion-1-hex: #592F20; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 70em; }
+
+body {
+  background-color: #0D0D0D;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  padding: 50px 200px; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  nav .logo {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px; }
+  nav .vl {
+    border-left: 1px solid #8d8d8d;
+    height: 20px;
+    margin: 20px; }
+  nav span {
+    font-size: .9rem;
+    font-weight: 200;
+    color: #8d8d8d; }
+
+header {
+  height: 100%;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #ffffff;
+  display: flex; }
+  header .col,
+  header .col-1,
+  header .col-10,
+  header .col-11,
+  header .col-12,
+  header .col-2,
+  header .col-3,
+  header .col-4,
+  header .col-5,
+  header .col-6,
+  header .col-7,
+  header .col-8,
+  header .col-9,
+  header .col-auto,
+  header .col-lg,
+  header .col-lg-1,
+  header .col-lg-10,
+  header .col-lg-11,
+  header .col-lg-12,
+  header .col-lg-2,
+  header .col-lg-3,
+  header .col-lg-4,
+  header .col-lg-5,
+  header .col-lg-6,
+  header .col-lg-7,
+  header .col-lg-8,
+  header .col-lg-9,
+  header .col-lg-auto,
+  header .col-md,
+  header .col-md-1,
+  header .col-md-10,
+  header .col-md-11,
+  header .col-md-12,
+  header .col-md-2,
+  header .col-md-3,
+  header .col-md-4,
+  header .col-md-5,
+  header .col-md-6,
+  header .col-md-7,
+  header .col-md-8,
+  header .col-md-9,
+  header .col-md-auto,
+  header .col-sm,
+  header .col-sm-1,
+  header .col-sm-10,
+  header .col-sm-11,
+  header .col-sm-12,
+  header .col-sm-2,
+  header .col-sm-3,
+  header .col-sm-4,
+  header .col-sm-5,
+  header .col-sm-6,
+  header .col-sm-7,
+  header .col-sm-8,
+  header .col-sm-9,
+  header .col-sm-auto,
+  header .col-xl,
+  header .col-xl-1,
+  header .col-xl-10,
+  header .col-xl-11,
+  header .col-xl-12,
+  header .col-xl-2,
+  header .col-xl-3,
+  header .col-xl-4,
+  header .col-xl-5,
+  header .col-xl-6,
+  header .col-xl-7,
+  header .col-xl-8,
+  header .col-xl-9,
+  header .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 7px; }
+  header .col-sm-5 p {
+    padding: 0 115px 20px 115px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.41); }
+  header .col-sm-5 .jedan {
+    padding: 15% 0;
+    background-color: #D9A38F; }
+    header .col-sm-5 .jedan button {
+      border: 0px solid white;
+      padding: 5px;
+      border-radius: 50px;
+      width: 100px;
+      height: 53.7px;
+      color: #ffffff;
+      background-color: #d3ac9d;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .8rem;
+      transition: 0.3s ease; }
+      header .col-sm-5 .jedan button:hover {
+        cursor: pointer;
+        background: #f8cebd; }
+  header .col-sm-5 .dva {
+    background-color: #BF6B6B;
+    padding: 15% 0; }
+    header .col-sm-5 .dva button {
+      border: 0px solid white;
+      padding: 5px;
+      border-radius: 50px;
+      width: 100px;
+      height: 53.7px;
+      color: #ffffff;
+      background-color: #d07f7f;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .8rem;
+      transition: 0.3s ease;
+      margin-bottom: .5px; }
+      header .col-sm-5 .dva button:hover {
+        cursor: pointer;
+        background: #d89999; }
+  header .col-sm-7 img {
+    width: 100%; }
+
+.avion {
+  padding: 60px 0;
+  background-color: #ffffff;
+  color: #0D0D0D;
+  text-align: center; }
+  .avion h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 20px 20px 0px 20px;
+    text-transform: uppercase;
+    color: #434b56; }
+  .avion h6 {
+    font-size: 14px;
+    color: #838383;
+    padding-bottom: 70px; }
+  .avion i {
+    border-radius: 100px;
+    border: 1px solid #a8a8a8;
+    padding: 15px;
+    font-size: 1.7rem;
+    margin-bottom: 30px; }
+  .avion h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    color: #434b56;
+    padding: 10px; }
+  .avion p {
+    font-size: 14px;
+    color: #838383;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 50px; }
+  .avion div .sr {
+    border-right: 1px solid #a8a8a8;
+    border-left: 1px solid #a8a8a8; }
+
+/*# sourceMappingURL=style.css.map */

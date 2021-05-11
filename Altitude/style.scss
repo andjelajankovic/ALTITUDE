@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap');
+/*$Fashion-1-hex: #592F20; */
+$third: #A6634B;
+$primary: #D9A38F;
+$primaryB: #d3ac9d;
+$primaryBt: #f8cebd;
+$secondary: #BF6B6B;
+$secondaryB: #d07f7f;
+$secondaryBt: #d89999;
+$bodyColor: #0D0D0D;
+$fontColor: #ffffff;
+$transition: .3s ease;
+$fontFamily: 'Raleway',
+sans-serif;
+$padding: 50px 200px;
+$fontSize: 16px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin btn ($color, $colorBt) {
+    border: 0px solid white;
+    padding: 5px;
+    border-radius: 50px;
+    width: 100px;
+    height: 53.7px;
+    color: $fontColor;
+    background-color: $color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+    transition: $transition;
+
+    &:hover {
+        cursor: pointer;
+        background: $colorBt;
+    }
+
+}
+
+@mixin pe ($col) {
+    font-size: 14px;
+    color: $col;
+}
+
+.container {
+    width: 70em;
+}
+
+body {
+    background-color: $bodyColor;
+    color: $fontColor;
+    font-family: $fontFamily;
+    padding: $padding;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .logo {
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    .vl {
+        border-left: 1px solid #8d8d8d;
+        height: 20px;
+        margin: 20px;
+
+    }
+
+    span {
+        font-size: .9rem;
+        font-weight: 200;
+        color: #8d8d8d;
+    }
+}
+
+header {
+    height: 100%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: $fontColor;
+    display: flex;
+
+    .col,
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-auto,
+    .col-lg,
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-auto,
+    .col-xl,
+    .col-xl-1,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-auto {
+        position: relative;
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 7px;
+
+    }
+
+    .col-sm-5 {
+        p {
+            padding: 0 115px 20px 115px;
+            @include pe(rgba(255, 255, 255, 0.41));
+        }
+
+        .jedan {
+            padding: 15% 0;
+            background-color: $primary;
+
+            button {
+                @include btn($primaryB, $primaryBt);
+            }
+        }
+
+        .dva {
+            background-color: $secondary;
+            padding: 15% 0;
+
+            button {
+                @include btn($secondaryB, $secondaryBt);
+                margin-bottom: .5px;
+            }
+        }
+    }
+
+    .col-sm-7 {
+
+        img {
+            width: 100%;
+
+        }
+    }
+}
+
+.avion {
+    padding: 60px 0;
+    background-color: $fontColor;
+    color: $bodyColor;
+    text-align: center;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 20px 20px 0px 20px;
+        text-transform: uppercase;
+        color: #434b56;
+    }
+
+    h6 {
+        @include pe(#838383);
+        padding-bottom: 70px;
+    }
+
+    i {
+        border-radius: 100px;
+        border: 1px solid #a8a8a8;
+        padding: 15px;
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 600;
+        color: #434b56;
+        padding: 10px;
+    }
+
+    p {
+        @include pe(#838383);
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-bottom: 50px;
+    }
+
+    div {
+        .sr {
+            border-right: 1px solid #a8a8a8;
+            border-left: 1px solid #a8a8a8;
+        }
+
+    }
+}
+
+
+
